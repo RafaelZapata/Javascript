@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <script>
+
+            //1º Exercicio
+            var endereco = {
+                rua: "Rua dos Pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            }
+
+            function exibir_endereco(endereco){
+                return console.log("O usuário mora em "+endereco.cidade+" / "+endereco.uf+', na "'+endereco.rua
+                +'"com nº '+endereco.numero)+".";
+            }
+
+            exibir_endereco(endereco);
+
+            //2º Exercicio
+            var x, y;
+
+            function pares(x, y){
+                var vetor;
+
+                for(var i=x; i <= y; i++){
+                    if(i%2 == 0) console.log(i);
+                }
+            }
+
+            pares(32, 40);
+
+            //3º Exercicio
+            var skills = ["Javascript", "ReactJS", "React Native"];
+
+            function temHabilidade(skills){
+
+                return (skills.indexOf("Javascript") !== -1) ? true : false;
+            }
+
+            console.log(temHabilidade(skills));
+
+            //4º Exercicio
+            var anos = 7;
+
+            function experiencia(anos){
+                if(anos >= 7){
+                    return "Jedi Master";
+                }else if(anos > 3){
+                    return "Avançado";  
+                }else if(anos > 1 ){
+                    return "Intermediário";
+                }else{
+                    return "Iniciante";
+                }
+            }
+
+            console.log(experiencia(anos));
+
+            //5º Exercicio
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+            function exibir_dados(usuarios){
+                for(let value of usuarios){
+                    console.log("O "+value.nome+" possui as habilidades: "+ value.habilidades.join(", "));
+                }
+            }
+
+            exibir_dados(usuarios);
+
+        </script>
+    </body>
+</html>
