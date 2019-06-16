@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Curso Javascript - Introdução 2</title>
+</head>
+
+<body>
+    <button id="new">Cria novo quadrado</button>
+    <div id="box"></div>
+
+    <script>
+        var btnElement = document.querySelector('#new');
+        var boxElement = document.querySelector('#box');
+        
+        // 1º exercicio
+        btnElement.onclick = function changeColor() {
+            var box = document.createElement('div');
+
+            box.style.width = '100px';
+            box.style.height = '100px';
+            box.style.backgroundColor = '#f00';
+
+            boxElement.appendChild(box);
+        };
+    </script>
+</body>
+
+</html>

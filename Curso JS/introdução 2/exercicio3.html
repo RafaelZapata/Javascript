@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript - Introdução 2</title>
+    </head>
+    <body>
+      <ul></ul>
+
+      <script>
+          var names = ['Diego', 'Gabriel', 'Lucas'];
+          var listElement = document.querySelector('ul');
+
+          for(name of names){
+              var textElement = document.createTextNode(name);
+              var liElement = document.createElement('li');
+
+              liElement.appendChild(textElement);
+              listElement.appendChild(liElement);
+          }
+      </script>  
+    </body>
+</html>

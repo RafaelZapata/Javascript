@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Curso Javascript - Introdução 2</title>
+</head>
+
+<body>
+    <button id="new">Cria novo quadrado</button>
+    <div id="box"></div>
+
+    <script>
+        var btnElement = document.querySelector('#new');
+        var boxElement = document.querySelector('#box');
+
+        function getRandomColor() {
+            var letters = "0123465789ABCDEF";
+            var color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        };
+
+            btnElement.onclick = function changeColor() {
+            var box = document.createElement('div');
+
+            box.style.width = '100px';
+            box.style.height = '100px';
+            box.style.backgroundColor = '#f00';
+
+            box.onmouseover = function () {
+                box.style.backgroundColor = getRandomColor();
+            }
+            boxElement.appendChild(box);
+        };
+    </script>
+</body>
+
+</html>
