@@ -1,0 +1,13 @@
+body {
+    font-family: Verdana, Arial, sans-serif
+    font-size: 18px;
+}
+
+input {
+    font-family: Verdana, Arial, sans-serif;
+    width: 100px;
+}
+
+div#result {
+    margin-top: 20px
+}
