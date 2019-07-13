@@ -1,0 +1,25 @@
+.design {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #4680e9;
+}
+
+header {
+
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+
+footer {
+    font-style: italic;
+}
