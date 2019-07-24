@@ -7,6 +7,13 @@ body {
     background-color: #4680e9;
 }
 
+<<<<<<< HEAD
+=======
+header {
+
+}
+
+>>>>>>> a4d5cf6629f963814b402a036b20ede8e2939b7d
 section {
     background-color: white;
     border-radius: 10px;
@@ -16,12 +23,20 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
 }
 
+<<<<<<< HEAD
 #numberSelect {
     width: 150px;
 }
 
 #result {
 
+=======
+#table {
+    width: 150px;
+    height: 180px;
+    border: 1px solid #000000;
+    background-color: #dbdbdb ;
+>>>>>>> a4d5cf6629f963814b402a036b20ede8e2939b7d
 }
 
 footer {
@@ -30,5 +45,8 @@ footer {
 
 #image {
     width: 500px;
+<<<<<<< HEAD
     width: 500px;
+=======
+>>>>>>> a4d5cf6629f963814b402a036b20ede8e2939b7d
 }
