@@ -64,7 +64,7 @@ elementFinalButton.onclick = function show() {
         elementResult.innerHTML += `<p>O menor elemento é ${menor}</p>`;
         elementResult.innerHTML += `<p>A soma dos elementos foi ${sum}</p>`;
         elementResult.innerHTML += `<p>A media dos elementos da lista foi ${media}</p>`;
-        let img = document.createElement('img');
+        var img = document.createElement('img');
         img.setAttribute('id', 'image');
         img.setAttribute('src', './_image/beaut.png');
         elementResult.appendChild(img); //tem a função de inserir a imagem na div#result
