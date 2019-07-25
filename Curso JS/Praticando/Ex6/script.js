@@ -67,6 +67,6 @@ elementFinalButton.onclick = function show() {
         let img = document.createElement('img');
         img.setAttribute('id', 'image');
         img.setAttribute('src', './_image/beaut.png');
-        elementResult.appendChild(img);
+        elementResult.appendChild(img); //tem a função de inserir a imagem na div#result
     }
 }
