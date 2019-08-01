@@ -46,9 +46,7 @@ elementFinalButton.onclick = function show() {
     let menor = array[0];
     let sum = 0;
     let media = 0;
-    let img = document.createElement('img');
-    img.setAttribute('id', 'image');
-
+    
     for(let i in array) {
         sum += array[i];
         if(menor > array[i]) menor = array[i]
@@ -56,7 +54,7 @@ elementFinalButton.onclick = function show() {
     }
 
     media = sum/total;
-
+    
     if(total == 0) {
         alert('Adicione algum valor antes de começar');
     } else {
@@ -66,6 +64,8 @@ elementFinalButton.onclick = function show() {
         elementResult.innerHTML += `<p>O menor elemento é ${menor}</p>`;
         elementResult.innerHTML += `<p>A soma dos elementos foi ${sum}</p>`;
         elementResult.innerHTML += `<p>A media dos elementos da lista foi ${media}</p>`;
+        
+        let img = document.createElement('img');
         img.setAttribute('src', './_image/beaut.png');
         elementResult.appendChild(img); //tem a função de inserir a imagem na div#result
     }
